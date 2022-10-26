@@ -13,6 +13,6 @@ class Calculator extends React.Component { // eslint-disable-line
       </div>
     );
   }
-};
+}
 
 export default Calculator;
