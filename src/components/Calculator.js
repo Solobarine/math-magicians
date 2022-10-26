@@ -11,7 +11,7 @@ class Calculator extends React.Component { // eslint-disable-line
           <button className="press" type="button" key="fig.val" id={id + figures.indexOf(fig)}>{fig.val}</button>
         ))}
       </div>
-    )
+    );
   }
 };
 
