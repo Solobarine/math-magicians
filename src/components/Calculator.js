@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Calculator extends React.Component {
+class Calculator extends React.Component { // eslint-disable-line
   render() {
     const figures = [{ val: 'AC' }, { val: '+/-' }, { val: '%' }, { val: '/' }, { val: 7 }, { val: 8 }, { val: 9 }, { val: 'x' }, { val: 4 }, { val: 5 }, { val: 6 }, { val: '-' }, { val: 1 }, { val: 2 }, { val: 3 }, { val: '+' }, { val: 0 }, { val: '.' }, { val: '=' }];
     const id = 'item';
@@ -13,6 +13,6 @@ class Calculator extends React.Component {
       </div>
     )
   }
-}
+};
 
 export default Calculator;
