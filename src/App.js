@@ -5,10 +5,10 @@ const App = () => {
     <div className="container">
       <div className="display">0</div>
       {figures.map((fig) => (
-        <button className="press" key="fig.val" id={id + figures.indexOf(fig)}>{fig.val}</button>
+        <button className="press" type="button" key="fig.val" id={id + figures.indexOf(fig)}>{fig.val}</button>
       ))}
-  </div>
-)
-}
+    </div>
+  );
+};
 
-export default App
+export default App;
