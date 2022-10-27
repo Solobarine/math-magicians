@@ -1,5 +1,5 @@
 import React from 'react';
-import calculate from '../logic/calculate.js';
+import calculate from '../logic/calculate'; // eslint-disable-line
 
 class Calculator extends React.Component { // eslint-disable-line
   constructor(props) {
