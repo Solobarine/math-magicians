@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
 import calculate from '../logic/calculate'; // eslint-disable-line
-import { useState } from 'react';
 
 const Calculator = () => {
   const [state, setState] = useState({ total: null, operation: null, next: null });
@@ -10,8 +9,8 @@ const Calculator = () => {
 
   const handleEvent = (e) => {
     setState(calculate(state, e.target.name));
-  } 
-    // Destructuring
+  };
+  // Destructuring
   const { total, next, operation } = state;
   return (
     <div className="container">
@@ -25,6 +24,6 @@ const Calculator = () => {
       ))}
     </div>
   );
-}
+};
 
 export default Calculator;
