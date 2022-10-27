@@ -1,56 +1,34 @@
  ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Math Magicians
 
-> Description the project.
-
+> This is Calculator that lets you do simple math calculations.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
+- HTML, CSS and JavaScript.
+- React.
+- Big.js, Webpack.
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+- Download the zip file.
+- Once downloaded, extract the zip file.
 
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
-### Setup
-
-### Install
+Ensure you have Node JS and NPM installed in your local machine.
 
 ### Usage
+To view the project, navigate to the build directory in th repo and open with your browser.
 
-### Run tests
+## Author
+👤 **Akpuru Solomon Barine
 
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Solobarine](https://github.com/Solobarine)
+- Twitter: [@SolomonAkpuru](https://twitter.com/SolomonAkpuru)
+- LinkedIn: [Solomon Akpuru](https://www.linkedin.com/mwlite/in/solomon-akpuru-17069b241)
 
 ## 🤝 Contributing
 
@@ -64,12 +42,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- My Siblings.
+- My Friends.
 
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
