@@ -24,8 +24,8 @@ class Calculator extends React.Component { // eslint-disable-line
       <div className="container">
         <div className="display">
           <span>{total}</span>
-          <span>{next}</span>
           <span>{operation}</span>
+          <span>{next}</span>
         </div>
         {figures.map((fig) => (
           <button className="press" onClick={this.handleEvent} name={fig.val} type="button" key={figures.indexOf(fig)} id={id + figures.indexOf(fig)}>{fig.val}</button>
