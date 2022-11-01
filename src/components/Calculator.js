@@ -13,15 +13,18 @@ const Calculator = () => {
   // Destructuring
   const { total, next, operation } = state;
   return (
-    <div className="container">
-      <div className="display">
-        <span>{total}</span>
-        <span>{operation}</span>
-        <span>{next}</span>
-      </div>
-      {figures.map((fig) => (
+    <div className="claculator-section">
+      <h2 className="invite">Let's do some Maths</h2>
+      <div className="calculator">
+        <div className="display">
+          <span>{total}</span>
+          <span>{operation}</span>
+          <span>{next}</span>
+        </div>
+        {figures.map((fig) => (
         <button className="press" onClick={handleEvent} name={fig.val} type="button" key={figures.indexOf(fig)} id={id + figures.indexOf(fig)}>{fig.val}</button>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
