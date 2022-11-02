@@ -1,16 +1,65 @@
 #root {
   margin: 0;
   padding: 0;
-  width: 100vw;
   height: 100vh;
-  background-color: #000;
+  background-image: linear-gradient(#20b970, #09f, #fff);
 }
 
-.container {
-  width: 50%;
-  height: 60%;
-  padding-top: 6%;
-  margin-left: 25%;
+.navBar {
+  width: 96%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2%;
+}
+
+.navItems {
+  width: 20%;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.navItem {
+  font-size: 18px;
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 12px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.navItem:hover {
+  background-color: #09f;
+}
+
+.navItem a {
+  text-decoration: none;
+}
+
+.title {
+  font-size: 40px;
+}
+
+#firstText,
+.second {
+  font-size: 32px;
+}
+
+.calculator-section {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+
+.invite {
+  font-size: 27px;
+  margin-left: 20px;
+}
+
+.calculator {
+  width: 40%;
+  height: 50vh;
   justify-content: space-between;
 }
 
@@ -42,4 +91,19 @@
 #item15,
 #item18 {
   background-color: orange;
+}
+
+.quote-section {
+  width: 100%;
+  height: 85vh;
+  position: absolute;
+  text-align: center;
+}
+
+.quote {
+  font-size: 35px;
+  font-weight: 600;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 16%;
 }
