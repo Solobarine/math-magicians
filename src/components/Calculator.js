@@ -13,7 +13,7 @@ const Calculator = () => {
   // Destructuring
   const { total, next, operation } = state;
   return (
-    <div className="claculator-section">
+    <div className="calculator-section">
       <h2 className="invite">Let's do some Maths</h2>
       <div className="calculator">
         <div className="display">
