@@ -5,17 +5,18 @@ import Home from './components/Home';
 import Calculate from './components/Calculator';
 import Quote from './components/Quote';
 
-const App = () => {
+const App = () => {  //eslint-disable-line
+
   return (
     <div className="app">
       <Nav />
       <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/calculate" element={<Calculate />}/>
-        <Route path="/quote" element={<Quote />}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/calculate" element={<Calculate />} />
+        <Route path="/quote" element={<Quote />} />
       </Routes>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

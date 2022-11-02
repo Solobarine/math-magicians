@@ -14,7 +14,7 @@ const Calculator = () => {
   const { total, next, operation } = state;
   return (
     <div className="calculator-section">
-      <h2 className="invite">Let's do some Maths</h2>
+      <h2 className="invite">Let&apos;s do some Maths</h2>
       <div className="calculator">
         <div className="display">
           <span>{total}</span>
@@ -22,7 +22,7 @@ const Calculator = () => {
           <span>{next}</span>
         </div>
         {figures.map((fig) => (
-        <button className="press" onClick={handleEvent} name={fig.val} type="button" key={figures.indexOf(fig)} id={id + figures.indexOf(fig)}>{fig.val}</button>
+          <button className="press" onClick={handleEvent} name={fig.val} type="button" key={figures.indexOf(fig)} id={id + figures.indexOf(fig)}>{fig.val}</button>
         ))}
       </div>
     </div>

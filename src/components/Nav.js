@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const Nav = () => {
+const Nav = () => { //eslint-disable-line
   return (
     <div className="navBar">
       <h1 className="logo">Math Magicians</h1>
@@ -11,6 +11,6 @@ const Nav = () => {
       </ul>
     </div>
   );
-}
+};
 
-export default Nav
+export default Nav;
