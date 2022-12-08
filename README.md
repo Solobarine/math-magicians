@@ -28,7 +28,7 @@ To view the project, navigate to the build directory in th repo and open with yo
 
 - GitHub: [@Solobarine](https://github.com/Solobarine)
 - Twitter: [@SolomonAkpuru](https://twitter.com/SolomonAkpuru)
-- LinkedIn: [Solomon Akpuru](https://www.linkedin.com/mwlite/in/solomon-akpuru-17069b241)
+- LinkedIn: [Solomon Akpuru](https://www.linkedin.com/mwlite/in/solomon-akpuru)
 
 ## 🤝 Contributing
 
