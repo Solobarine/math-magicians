@@ -6,17 +6,19 @@
 }
 
 .navBar {
-  width: 96%;
   display: flex;
   justify-content: space-between;
-  margin-left: 2%;
+}
+
+.logo {
+  font-size: 20px;
+  padding: 0 15px;
 }
 
 .navItems {
-  width: 20%;
   display: flex;
   text-align: center;
-  justify-content: space-between;
+  gap: 10px;
   padding: 10px;
 }
 
@@ -54,8 +56,8 @@
 
 .calculator-section {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding-top: 25px;
+  grid-template-columns: .7fr 1fr;
+  padding: 20px;
 }
 
 .calculator-section > div:nth-child(1) {
@@ -73,10 +75,12 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   max-width: 400px;
+  min-width: 280px;
   margin: auto;
   justify-content: space-between;
   border-radius: 10px;
   border: 3px solid white;
+  overflow: hidden;
 }
 
 .display {
@@ -85,7 +89,8 @@
   flex-direction: column;
   grid-column: span 4;
   background-color: rgba(112, 128, 144, .7);
-  border-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   text-align: right;
   justify-content: center;
   font-size: 35px;
@@ -137,4 +142,81 @@
   font-weight: 600;
   max-width: 850px;
   text-align: center;
+}
+
+@media screen and (max-width: 401px) {
+  .navBar {
+    flex-direction: column;
+  }
+
+  .logo {
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .navItems {
+    margin: auto;
+  }
+
+  .navItems a {
+    color: #222;
+    background-color: rgba(255, 255, 255, .7);
+  }
+
+  .title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  #firstText,
+  .second {
+    font-size: 1rem;
+    text-align: center;
+    width: auto;
+  }
+
+  .invite {
+    font-size: 20px;
+  }
+
+  .calculator-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+
+  .quote-section p {
+    font-size: 1.2rem;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .navItems a {
+    font-size: 15px;
+    padding: 8px;
+  }
+
+  .home {
+    font-size: 22px;
+  }
+
+  #firstText,
+  .second {
+    font-size: 1.2rem;
+    width: auto;
+  }
+
+  .invite {
+    font-size: 25px;
+  }
+
+  .calculator {
+    max-width: 330px;
+  }
+
+  .quote-section p {
+    font-size: 1.5rem;
+    padding: 0 15px;
+  }
 }
