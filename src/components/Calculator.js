@@ -14,16 +14,20 @@ const Calculator = () => {
   const { total, next, operation } = state;
   return (
     <div className="calculator-section">
-      <h2 className="invite">Let&apos;s do some Maths</h2>
-      <div className="calculator">
-        <div className="display">
-          <span>{total}</span>
-          <span>{operation}</span>
-          <span>{next}</span>
+      <div>
+        <h2 className="invite">Let&apos;s do some Maths</h2>
+      </div>
+      <div>
+        <div className="calculator">
+          <div className="display">
+            <span>{total}</span>
+            <span>{operation}</span>
+            <span>{next}</span>
+          </div>
+          {figures.map((fig) => (
+            <button className="press" onClick={handleEvent} name={fig.val} type="button" key={figures.indexOf(fig)} id={id + figures.indexOf(fig)}>{fig.val}</button>
+          ))}
         </div>
-        {figures.map((fig) => (
-          <button className="press" onClick={handleEvent} name={fig.val} type="button" key={figures.indexOf(fig)} id={id + figures.indexOf(fig)}>{fig.val}</button>
-        ))}
       </div>
     </div>
   );

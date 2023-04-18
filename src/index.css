@@ -2,39 +2,46 @@
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-image: linear-gradient(#20b970, #09f, #fff);
+  background-image: linear-gradient(90deg,#0022ff, #00ffbc);
 }
 
 .navBar {
-  width: 96%;
   display: flex;
   justify-content: space-between;
-  margin-left: 2%;
+}
+
+.logo {
+  font-size: 20px;
+  padding: 0 15px;
 }
 
 .navItems {
-  width: 20%;
   display: flex;
   text-align: center;
-  justify-content: space-between;
+  gap: 10px;
   padding: 10px;
 }
 
-.navItem {
+.navItems a {
   font-size: 18px;
   border: 1px solid #555;
   border-radius: 8px;
+  color: #0022ff;
   padding: 12px;
   list-style: none;
   cursor: pointer;
-}
-
-.navItem:hover {
-  background-color: #09f;
-}
-
-.navItem a {
+  opacity: .7;
   text-decoration: none;
+}
+
+.navItems a:hover {
+  background-color: #09f;
+  color: #fff;
+  opacity: 1;
+}
+
+.home {
+  padding: 20px;
 }
 
 .title {
@@ -43,46 +50,66 @@
 
 #firstText,
 .second {
-  font-size: 32px;
+  font-size: 20px;
+  width: 50%;
 }
 
 .calculator-section {
+  display: grid;
+  grid-template-columns: .7fr 1fr;
+  padding: 20px;
+}
+
+.calculator-section > div:nth-child(1) {
   display: flex;
-  justify-content: space-between;
-  padding-top: 25px;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }
 
 .invite {
-  font-size: 27px;
-  margin-left: 20px;
+  font-size: 45px;
 }
 
 .calculator {
-  width: 40%;
-  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 400px;
+  min-width: 280px;
+  margin: auto;
   justify-content: space-between;
+  border-radius: 10px;
+  border: 3px solid white;
+  overflow: hidden;
 }
 
 .display {
-  width: 96%;
-  height: 24%;
-  background-color: slategray;
+  display: flex;
+  min-height: 100.73px;
+  flex-direction: column;
+  grid-column: span 4;
+  background-color: rgba(112, 128, 144, .7);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   text-align: right;
-  font-size: 45px;
+  justify-content: center;
+  font-size: 35px;
   color: #fff;
-  padding-top: 20px;
 }
 
 .press {
-  width: 24%;
-  height: 19%;
+  height: 75px;
   font-size: 16px;
-  border: 1px solid grey;
-  background-color: #fff;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, .8);
+}
+
+.press:hover {
+  background-color: rgba(255, 255, 255, 1);
 }
 
 #item16 {
-  width: 48%;
+  grid-column: span 2;
 }
 
 #item3,
@@ -90,20 +117,106 @@
 #item11,
 #item15,
 #item18 {
-  background-color: orange;
+  background-color: rgb(255, 165, 0, 0.8);
+}
+
+#item3:hover,
+#item7:hover,
+#item11:hover,
+#item15:hover,
+#item18:hover {
+  background-color: rgb(255, 165, 0, 1);
 }
 
 .quote-section {
   width: 100%;
-  height: 85vh;
-  position: absolute;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-section p {
+  font-size: 35px;
+  font-weight: 600;
+  max-width: 850px;
   text-align: center;
 }
 
-.quote {
-  font-size: 35px;
-  font-weight: 600;
-  width: 60%;
-  margin-left: 20%;
-  margin-top: 16%;
+@media screen and (max-width: 401px) {
+  .navBar {
+    flex-direction: column;
+  }
+
+  .logo {
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .navItems {
+    margin: auto;
+  }
+
+  .navItems a {
+    color: #222;
+    background-color: rgba(255, 255, 255, .7);
+  }
+
+  .title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  #firstText,
+  .second {
+    font-size: 1rem;
+    text-align: center;
+    width: auto;
+  }
+
+  .invite {
+    font-size: 20px;
+  }
+
+  .calculator-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+
+  .quote-section p {
+    font-size: 1.2rem;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .navItems a {
+    font-size: 15px;
+    padding: 8px;
+  }
+
+  .home {
+    font-size: 22px;
+  }
+
+  #firstText,
+  .second {
+    font-size: 1.2rem;
+    width: auto;
+  }
+
+  .invite {
+    font-size: 25px;
+  }
+
+  .calculator {
+    max-width: 330px;
+  }
+
+  .quote-section p {
+    font-size: 1.5rem;
+    padding: 0 15px;
+  }
 }

@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 const Nav = () => { //eslint-disable-line
   return (
     <div className="navBar">
-      <h1 className="logo">Math Magicians</h1>
-      <ul className="navItems">
-        <li className="navItem"><Link to="/">Home</Link></li>
-        <li className="navItem"><Link to="/calculate">Calculate</Link></li>
-        <li className="navItem"><Link to="/quote">Quote</Link></li>
-      </ul>
+      <p className="logo">Math Magicians</p>
+      <div className="navItems">
+        <Link to="/">Home</Link>
+        <Link to="/calculate">Calculate</Link>
+        <Link to="/quote">Quote</Link>
+      </div>
     </div>
   );
 };
